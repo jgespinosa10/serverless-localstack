@@ -1,0 +1,24 @@
+org: jgespinosa10
+app: serverless-localstack
+service: serverless-localstack
+
+plugins:
+  - serverless-localstack
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: local
+
+functions:
+  hello:
+    handler: handler.js
+    events:
+      - http:
+          path: /
+          method: GET
+
+custom:
+  localstack:
+    stages:
+      - local

@@ -1,0 +1,11 @@
+{
+  "name": "serverless-localstack",
+  "version": "1.0.0",
+  "description": "trying serverless with localstack",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-localstack": "^1.2.1"
+  }
+}
